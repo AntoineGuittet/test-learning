@@ -3,5 +3,11 @@
  */
 
 export default class Index {
-
+    getUsers(name) {
+        let list = [];
+        if (name === 'toto') {
+            list = ['toto'];
+        }
+        return list;
+    }
 }

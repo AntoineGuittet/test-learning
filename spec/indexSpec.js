@@ -9,6 +9,13 @@ describe("Index", () => {
             let index = new Index();
             let userlist = index.getUsers();
             expect(userlist.length).toBe(0);
+            next();
+        });
+        it("should return a user list with one user", next => {
+            let index = new Index();
+            let userlist = index.getUsers();
+            expect(userlist.length).toBe(1);
+            next();
         });
     });
 });
